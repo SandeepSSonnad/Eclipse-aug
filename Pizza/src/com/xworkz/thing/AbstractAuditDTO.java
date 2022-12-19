@@ -10,8 +10,9 @@ public abstract class AbstractAuditDTO implements Serializable {
 	private String UpdatedBy;
 	private LocalDateTime updatedDate;
 	
-	public AbstractAuditDTO() {
-		
+	public AbstractAuditDTO(String createdBy, String updatedBy) {
+		this.createdBy=createdBy;
+		this.UpdatedBy=updatedBy;
 	}
 
 	@Override

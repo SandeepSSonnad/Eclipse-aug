@@ -12,9 +12,17 @@ public class PizzaDTO extends AbstractAuditDTO {
 	private double price;
 	private String flavour;
 	private String type;
-	
-	public PizzaDTO() {
-		System.out.println("Running Default Constructor");
+
+	public PizzaDTO(String createdBy, String updatedBy, String name, String company, PizzaSize size, boolean cheese,
+			double price, String flavour, String type) {
+		super(createdBy, updatedBy);
+		this.name = name;
+		this.company = company;
+		this.size = size;
+		this.cheese = cheese;
+		this.price = price;
+		this.flavour = flavour;
+		this.type = type;
 	}
 
 	@Override
@@ -78,8 +86,5 @@ public class PizzaDTO extends AbstractAuditDTO {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
-	
-	
-	
+
 }

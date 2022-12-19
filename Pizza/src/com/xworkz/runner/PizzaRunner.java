@@ -12,7 +12,7 @@ public class PizzaRunner {
 	public static void main(String[] args) {
 
 		PizzaValidateAndSave save =new PizzaValidateAndSaveImplement();
-		PizzaDTO dto = new PizzaDTO();
+		PizzaDTO dto = new PizzaDTO("Sandeep","Sandeep","Corn Pizza","Dominos",PizzaSize.MEDIUM,true,225,"Sezning","Non-Veg");
 		dto.setCreatedBy("Sandeep");
 		dto.setCreatedDate(LocalDateTime.now());
 		dto.setUpdatedBy("Sandeep");

@@ -19,6 +19,7 @@ public class CollectionDamRunner {
 		String karnatakaDam9 = "Narayanpur Dam";
 		String karnatakaDam10 = "Supa Dam";
 		String karnatakaDam11 = "GhataPrabha Dam";
+		String karnatakaDam12 = "gadag";
 		Collection<String> karnatakaDams = new ArrayList<String>();
 		karnatakaDams.add(karnatakaDam1);
 		karnatakaDams.add(karnatakaDam2);
@@ -31,6 +32,7 @@ public class CollectionDamRunner {
 		karnatakaDams.add(karnatakaDam9);
 		karnatakaDams.add(karnatakaDam10);
 		karnatakaDams.add(karnatakaDam11);
+		karnatakaDams.add(karnatakaDam12);
 
 		String andraPradeshDam1 = "Somasila Dam";
 		String andraPradeshDam2 = "Prakasham Dam";
@@ -250,6 +252,7 @@ public class CollectionDamRunner {
 		Iterator<String> element1 = indiaDams.iterator();
 		while (element1.hasNext()) {
 			String str = element1.next();
+			
 			if (str.startsWith("T")) {
 				System.out.println("DamName starts With T : " + str);
 			}
@@ -297,27 +300,22 @@ public class CollectionDamRunner {
 		while (element6.hasNext()) {
 			String str = element6.next();
 
-			if (str.equals(element6)) {
-				System.out.println("Palindrome :" + str);
-			}
-
 		}
 
 		System.out.println("==================================================");
 
-		
 		Iterator<String> element7 = indiaDams.iterator();
-		System.out.println("Before removal : "+indiaDams.size());
+		System.out.println("Before removal : " + indiaDams.size());
 		while (element7.hasNext()) {
 			String str = element7.next();
 
 			if (str.startsWith("P")) {
 				element7.remove();
-				
+
 			}
 
 		}
-		System.out.println("After removal : "+indiaDams.size());
+		System.out.println("After removal : " + indiaDams.size());
 
 	}
 

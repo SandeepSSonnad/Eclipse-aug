@@ -2,6 +2,9 @@ package com.xworkz.runner;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 public class CollectionRunner {
 
@@ -11,6 +14,7 @@ public class CollectionRunner {
 		String mall3 = "Forum Mall";
 		String mall4 = "Mantri Square";
 		String mall5 = "GT Mall";
+		
 
 		Collection<String> malls = new ArrayList<String>();
 		malls.add(mall5);
@@ -18,18 +22,18 @@ public class CollectionRunner {
 		malls.add(mall3);
 		malls.add(mall2);
 		malls.add(mall1);
-
-		//System.out.println(malls.size());
 		
-		malls.removeAll(malls);
-		System.out.println(malls.size());
-
-		for (String element : malls) {
-			System.out.println(element);
+		
+		
+		System.out.println("==================================");
+		
+		if(mall5.equals(mall5)) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
 		}
-		
-		
-		
+
+		System.out.println(malls.size());
 
 	}
 

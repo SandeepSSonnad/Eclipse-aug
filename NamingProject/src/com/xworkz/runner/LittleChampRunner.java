@@ -7,7 +7,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.xworkz.configuration.*;
+import com.xworkz.things.Actor;
 import com.xworkz.things.LittleChamp;
+import com.xworkz.things.Rocket;
+import com.xworkz.things.Season;
 
 public class LittleChampRunner {
 
@@ -56,6 +59,37 @@ public class LittleChampRunner {
 		
 		System.out.println(spring.getBean("stringBuilder",StringBuilder.class));
 		System.out.println(spring.getBean("stringBuffer",StringBuffer.class));
+		
+		Rocket refofRocket  =spring.getBean(Rocket.class);
+		System.out.println(refofRocket);
+		System.out.println(refofRocket.getCountry());
+		System.out.println(refofRocket.getName());
+		System.out.println(refofRocket.getBudget());
+		
+		Rocket refofRocket2  =spring.getBean(Rocket.class);
+		System.out.println(refofRocket2);
+		System.out.println(refofRocket2.getCountry());
+		System.out.println(refofRocket2.getName());
+		System.out.println(refofRocket2.getBudget());
+		
+		Actor refofActor =spring.getBean(Actor.class);
+		System.out.println(refofActor);
+		System.out.println(refofActor.getName());
+		System.out.println(refofActor.getLanguage());
+		System.out.println(refofActor.getAge());
+		
+		Season refofSeason= spring.getBean(Season.class);
+		System.out.println(refofSeason);
+		System.out.println(refofSeason.getName());
+		System.out.println(refofSeason.getDuration());
+		System.out.println(refofSeason.getStartingMonth());
+		
+		Season refofSeason2= spring.getBean("season",Season.class);
+		System.out.println(refofSeason2);
+		System.out.println(refofSeason2.getName());
+		System.out.println(refofSeason2.getDuration());
+		System.out.println(refofSeason2.getStartingMonth());
+		
 		
 		
 	}

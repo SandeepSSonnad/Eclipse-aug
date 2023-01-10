@@ -11,6 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import com.xworkz.things.Actor;
+import com.xworkz.things.Rocket;
+import com.xworkz.things.Season;
+
 @Configuration
 @ComponentScan("com.xworkz")
 public class SpringConfiguration {
@@ -196,7 +200,22 @@ public class SpringConfiguration {
 		return buffer;
 	}
 	
+	@Bean
+	public Rocket rocket() {
+		System.out.println("Launching Rocket");
+		Rocket rocky=new Rocket();
+		return rocky;
+	}
 	
+	@Bean
+	public Season season() {
+		System.out.println("Running Season..........");
+		Season sea=new Season();
+		sea.setName("Spring");
+		sea.setDuration(3);
+		sea.setStartingMonth("March");
+		return sea;
+	}
 	
 	
 	

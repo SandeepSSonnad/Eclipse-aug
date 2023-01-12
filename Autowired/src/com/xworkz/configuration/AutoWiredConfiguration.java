@@ -161,6 +161,218 @@ public class AutoWiredConfiguration {
 		return 3;
 	}
 	
+	@Bean
+	public String bikeName() {
+		return "Passion-Pro";
+	}
+	
+	@Bean
+	public int bikeCC() {
+		return 130;
+	}
+	
+	@Bean
+	public int bikePrice() {
+		return 60000;
+	}
+	
+	@Bean
+	public String bikeColor() {
+		return "Red";
+	}
+	
+	@Bean
+	public int bikeWheels() {
+		return 2;
+	}
+	
+	@Bean
+	public String bikeBrand() {
+		return "TVS";
+	}
+	
+	@Bean 
+	public int newsPaperId() {
+		return 1234;
+	}
+	
+	@Bean
+	public String newsPaperName() {
+		return "Vijay-Karnataka";
+	}
+	
+	@Bean
+	public String newsPaperOwnerName() {
+		return "Vijay Sankeshwar";
+	}
+	
+	@Bean
+	public String newsPaperLanguage() {
+		return "Kannada";
+	}
+	
+	@Bean
+	public double newsPaperPrice() {
+		return 2.5;
+	}
+	
+	@Bean
+	public String engineName() {
+		return "AudiQ6";
+	}
+	
+	@Bean
+	public String engineType() {
+		return "Petrol";
+	}
+	
+	@Bean
+	public int engineNumber() {
+		return 974142;
+	}
+	
+	@Bean
+	public String engineVersion() {
+		return "BS6";
+	}
+	
+	@Bean
+	public String engineCompanyName() {
+		return "Audi";
+	}
+	
+	@Bean
+	public int engineStroke() {
+		return 4;
+	}
+	
+	@Bean
+	public String snakeName() {
+		return "King Cobra";
+	}
+	
+	@Bean
+	public int snakeLength() {
+		return 5;
+	}
+	
+	@Bean
+	public String snakeColor() {
+		return "Brown";
+	}
+	
+	@Bean
+	public String snakeType() {
+		return "Dangerous Snake";
+	}
+	
+	@Bean
+	public boolean snakePoisionous() {
+		return true;
+	}
+	
+	@Bean 
+	public String ghostName() {
+		return "Unknown";
+	}
+	
+	@Bean 
+	public String ghostFatherName() {
+		return "Daddy";
+	}
+	
+	@Bean 
+	public String ghostMotherName() {
+		return "Moms";
+	}
+	
+	@Bean 
+	public String ghostJob() {
+		return "Software Engineer";
+	}
+	
+	@Bean 
+	public String ghostGender() {
+		return "Male";
+	}
+	
+	@Bean 
+	public String ghostDressColor() {
+		return "Yellow";
+	}
+	
+	@Bean 
+	public LocalDate dateOfDeath() {
+		LocalDate date=LocalDate.of(2022, 02, 01);
+		return date;
+	}
+	
+	@Bean 
+	public String ghostDeathPlace() {
+		return " Halli";
+	}
+	
+	@Bean 
+	public String ghostBirthPlace() {
+		return "Bharata Bhoomi";
+	}
+	
+	@Bean 
+	public String ghostGirlFriendName() {
+		return "Rashmika Manganna";
+	}
+	
+	@Bean 
+	public boolean ghostMarried() {
+		return true;
+	}
+	
+	@Bean 
+	public boolean ghostEmploye() {
+		return true;
+	}
+	
+	@Bean 
+	public boolean ghostNail() {
+		return true;
+	}
+	
+	@Bean 
+	public boolean ghostSingle() {
+		return true;
+	}
+	
+	@Bean 
+	public boolean ghostVisible() {
+		return false;
+	}
+	
+	@Bean 
+	public boolean ghostHands() {
+		return true;
+	}
+	
+	@Bean 
+	public boolean ghostLegs() {
+		return false;
+	}
+	
+	@Bean 
+	public boolean ghostRelationShip() {
+		return true;
+	}
+	
+	@Bean 
+	public int ghostNailLength() {
+		return 5;
+	}
+	
+	@Bean 
+	public int ghostAge() {
+		return 50;
+	}
+	
+	
 	
 	
 	

@@ -5,9 +5,14 @@ import java.util.Arrays;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.xworkz.bean.Bike;
+import com.xworkz.bean.Engine;
+import com.xworkz.bean.Ghost;
 import com.xworkz.bean.HardwareShop;
+import com.xworkz.bean.NewsPaper;
 import com.xworkz.bean.Pencil;
 import com.xworkz.bean.Rubber;
+import com.xworkz.bean.Snake;
 import com.xworkz.bean.Software;
 import com.xworkz.bean.SoftwareEngineer;
 import com.xworkz.configuration.AutoWiredConfiguration;
@@ -76,14 +81,36 @@ public class AutowiredRunner {
 		System.out.println(container.getBean("rubberStolen"));
 		System.out.println(container.getBean("rubberSize"));
 		
+		System.out.println("=======================================");
 		
+		Bike bike=container.getBean(Bike.class);
+		System.out.println(bike);
+		System.out.println(container.getBean("bikeName"));
+		System.out.println(container.getBean("bikeCC"));
+		System.out.println(container.getBean("bikePrice"));
+		System.out.println(container.getBean("bikeWheels"));
+		System.out.println(container.getBean("bikeBrand"));
+		System.out.println(container.getBean("bikeColor"));
 		
+		System.out.println("=====================================");
 		
+		NewsPaper paper=container.getBean(NewsPaper.class);
+		System.out.println(paper);
 		
+		System.out.println("=========================================");
 		
+		Engine engine=container.getBean(Engine.class);
+		System.out.println(engine);
 		
+		System.out.println("==================================");
 		
+		Snake snake=container.getBean(Snake.class);
+		System.out.println(snake);
 		
+		System.out.println("=======================================");
+		
+		Ghost ghost=container.getBean(Ghost.class);
+		System.out.println(ghost);
 		
 		
 		
